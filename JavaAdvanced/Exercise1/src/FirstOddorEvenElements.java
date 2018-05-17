@@ -17,7 +17,7 @@ public class FirstOddorEvenElements {
         int foundCounter = 0;
         for (int i = 0; i < nums.length; i++) {
             if (foundNums.length > foundCounter){
-                if (nums[i] % 2 == oddeven){
+                if (Math.abs(nums[i] % 2) == oddeven){
                     foundNums[foundCounter] = nums[i];
                     foundCounter++;
                 }
