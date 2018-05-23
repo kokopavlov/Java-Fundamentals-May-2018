@@ -16,12 +16,18 @@ public class SetsofElements {
             hashM.add(Integer.parseInt(scanner.nextLine()));
         }
         Set<Integer> result = new LinkedHashSet<>();
-        for (int i = 0; i < hashN.size(); i++) {
-            for (int j = 0; j < hashM.size(); j++) {
-                if (hashN.iterator().next() == hashM.iterator().next()){
-
+        for (int numN:hashN
+             ) {
+            for (int numM:hashM
+                 ) {
+                if (numN == numM){
+                    result.add(numN);
                 }
             }
+        }
+        for (int num:result
+             ) {
+            System.out.print(num + " ");
         }
     }
 }
